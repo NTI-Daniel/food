@@ -1,1 +1,98 @@
-/* Denna fil skall innehålla din CSS kod */
+*{
+    margin: 0;
+    overflow: hidden;
+
+}
+.wrapper{
+    background:url("/img/pexels-fwstudio-129731.jpg");
+    background-repeat:no-repeat;
+    
+}
+   
+
+.gridwrapper{
+display: grid;
+background:url("/img/pexels-fwstudio-129731.jpg");
+height:100vh;
+grid-template-columns: 5fr 5fr 5fr 5fr ;
+grid-template-rows: 3fr 1fr 5fr 5fr 5fr;
+grid-gap: 20px;
+grid-template-areas:
+'hd hd hd hd'
+'na na na na'
+'a1 a1 se se'
+'a2 a2 se se'
+'fo fo fo fo'
+;
+}
+.button1{
+   grid-area:b1;
+   height: 55px;
+   width: 200px;
+    
+
+}
+
+.button2{
+ grid-area:b2;
+ height: 55px;
+ width: 200px;
+}
+
+.button3{
+
+   grid-area:b3;
+   height: 55px;
+   width: 200px;
+}
+
+.img{
+    margin-left: 45%;
+    margin-right: 55%;
+}
+
+.header{
+    grid-area:hd;
+    height:150px;
+
+}
+
+.nav{
+    grid-area:na;
+    display:flex;
+    height:7vh;
+    justify-content: space-between; /*i sidled*/
+    align-items: center;/*i höjdled*/
+    height:100px;
+
+}
+
+.section{
+    grid-area:se;
+   
+
+}
+
+.article1{
+    
+    grid-area:a1;
+    height:250px;
+    width: 250px;
+    
+
+
+}
+
+.article2{
+    grid-area:a2;
+    height:250px;
+    width:250px;
+    
+}
+
+.footer{
+    background-color:blue;
+    height: 200px;
+}
+
+
