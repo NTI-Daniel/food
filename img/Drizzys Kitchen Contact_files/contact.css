@@ -81,7 +81,6 @@ a{
     margin-left:20px;
     margin-bottom: 0;
     overflow:visible;
-    line-height:50px;
     
     
 
@@ -138,5 +137,6 @@ footer{
 .tw{
     grid-area:tw;
 }
+
 
 
