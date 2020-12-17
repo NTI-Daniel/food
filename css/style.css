@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
 
 }
 .wrapper{
@@ -11,39 +11,19 @@
    
 
 .gridwrapper{
-display: grid;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 4fr 4fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+          "hd hd hd hd hd"
+          "na na na na na"
+          "a1 se se se se"
+          "a2 se se se se"
+          "fo fo fo fo fo";
+      
 background:url("/img/pexels-fwstudio-129731.jpg");
-height:100vh;
-grid-template-columns: 5fr 5fr 5fr 5fr ;
-grid-template-rows: 3fr 1fr 5fr 5fr 5fr;
-grid-gap: 20px;
-grid-template-areas:
-'hd hd hd hd'
-'na na na na'
-'a1 a1 se se'
-'a2 a2 se se'
-'fo fo fo fo'
-;
-}
-.button1{
-   grid-area:b1;
-   height: 55px;
-   width: 200px;
-    
-
-}
-
-.button2{
- grid-area:b2;
- height: 55px;
- width: 200px;
-}
-
-.button3{
-
-   grid-area:b3;
-   height: 55px;
-   width: 200px;
+height:130vh;
 }
 
 .img{
@@ -57,18 +37,36 @@ grid-template-areas:
 
 }
 
-.nav{
-    grid-area:na;
-    display:flex;
-    height:7vh;
-    justify-content: space-between; /*i sidled*/
-    align-items: center;/*i höjdled*/
-    height:100px;
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
+a:hover { 
+    color: gray; 
+    opacity: 20%;
+  }
+
+a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#ffffff;
+  margin:0 15px;
+  font-size:34px;
+  letter-spacing:1px;
+  display:inline-block;
+  text-align: center;
 }
+
+
+
 
 .section{
     grid-area:se;
+    font-family: 'Dancing Script', cursive;
+    margin-right: 50px;
+    margin-left:50px;
+    
    
 
 }
@@ -78,7 +76,7 @@ grid-template-areas:
     grid-area:a1;
     height:250px;
     width: 250px;
-    
+    margin-left:15px;
 
 
 }
@@ -87,12 +85,31 @@ grid-template-areas:
     grid-area:a2;
     height:250px;
     width:250px;
+    margin-left:15px;
     
 }
 
-.footer{
-    background-color:blue;
-    height: 200px;
+footer{
+    grid-area: fo;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    gap: 60px;
 }
 
+
+.nav{
+    grid-area:na;
+    display:flex;
+    width:60vw;
+    justify-content: space-around;
+    margin:auto;
+
+}
+
+
+
+.huvudtext{
+    font-size: 300%  ;
+}
 

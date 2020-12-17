@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    overflow: auto;
+
+}
+.wrapper{
+    background:url("/img/pexels-fwstudio-129731.jpg");
+    background-repeat:no-repeat;
+    
+}
+   
+
+.gridwrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+          "hd hd hd hd hd"
+          "e1 me bo co e2"
+          "a1 a1 se se se"
+          "a2 a2 se se se"
+          "fo fo fo fo fo";
+      
+background:url("/img/pexels-fwstudio-129731.jpg");
+height:130vh;
+}
+
+.img{
+    margin-left: 45%;
+    margin-right: 55%;
+}
+
+.header{
+    grid-area:hd;
+    height:150px;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+a:hover { 
+    color: gray; 
+    opacity: 20%;
+  }
+
+a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#ffffff;
+  margin:0 15px;
+  font-size:34px;
+  letter-spacing:1px;
+  display:inline-block;
+  text-align: center;
+}
+
+
+
+
+.section{
+    grid-area:se;
+    font-family: 'Dancing Script', cursive;
+    
+   
+
+}
+
+.article1{
+    
+    grid-area:a1;
+    height:250px;
+    width: 250px;
+    
+
+
+}
+
+.article2{
+    grid-area:a2;
+    height:250px;
+    width:250px;
+    
+}
+
+footer{
+    background-color:blue;
+    height: 100px;
+    margin:auto;
+}
+
+.meny{
+    grid-area:me;
+    font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#ffffff;
+  margin:0 15px;
+  font-size:34px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+
+}
+
+.book{
+    grid-area:bo;
+    font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#ffffff;
+  margin:0 15px;
+  font-size:34px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+
+.contact{
+    grid-area:co;
+    font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#ffffff;
+  margin:0 15px;
+  font-size:34px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+
+.emptyspace{
+    grid-area:e1;
+}
+
+.emptyspace2{
+    grid-area:e2;
+
+}
+
+.huvudtext{
+    font-size: 300%  ;
+}
+

@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    overflow: auto;
+
+}
+.wrapper{
+    background:url("/img/pexels-fwstudio-129731.jpg");
+    background-repeat:no-repeat;
+    
+}
+   
+
+.gridwrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 4fr 4fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+          "hd hd hd hd hd"
+          "na na na na na"
+          "a1 se se se se"
+          "a2 se se se se"
+          "fo fo fo fo fo";
+      
+background:url("/img/pexels-fwstudio-129731.jpg");
+height:130vh;
+}
+
+.img{
+    margin-left: 45%;
+    margin-right: 55%;
+}
+
+.header{
+    grid-area:hd;
+    height:150px;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+a:hover { 
+    color: gray; 
+    opacity: 20%;
+  }
+
+a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#ffffff;
+  margin:0 15px;
+  font-size:34px;
+  letter-spacing:1px;
+  display:inline-block;
+  text-align: center;
+}
+
+
+
+
+.section{
+    grid-area:se;
+    font-family: 'Dancing Script', cursive;
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    gap:10px;
+    grid-template-areas: 
+    "ra me so"
+    "ko sa ta"
+    "bu ch kb"
+    ;
+    
+   
+
+}
+.rat{
+    grid-area:ra;
+    
+}
+
+.soup{
+    grid-area:so;
+}
+
+.meatball{
+    grid-area:me;
+}
+
+.kobideh{
+    grid-area:ko;
+}
+
+.sabzi{
+    grid-area:sa;
+
+}
+
+.tachin{
+    grid-area: ta;
+}
+
+.burger{
+   grid-area:bu; 
+}
+
+.chickwings{
+    grid-area: ch;
+}
+
+.kebabroll{
+    grid-area: kb;
+}
+
+.article1{
+    
+    grid-area:a1;
+    height:250px;
+    width: 250px;
+    margin-left:15px;
+    
+
+
+}
+
+.article2{
+    grid-area:a2;
+    height:250px;
+    width:250px;
+    margin-left:15px;
+    
+}
+
+footer{
+    grid-area: fo;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.nav{
+    grid-area:na;
+    display:flex;
+    width:60vw;
+    justify-content: space-around;
+    margin:auto;
+
+}
+
+.huvudtext{
+    font-size: 300%  ;
+}
+
+
+
