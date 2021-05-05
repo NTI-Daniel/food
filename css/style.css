@@ -3,13 +3,15 @@
     overflow: auto;
 
 }
+
 .wrapper{
     background:url("/img/pexels-fwstudio-129731.jpg");
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     
 }
-   
 
+   
+@media screen and (min-width:750px){
 .gridwrapper{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -24,6 +26,7 @@
       
 background:url("/img/pexels-fwstudio-129731.jpg");
 height:130vh;
+}
 }
 
 .img{
@@ -97,7 +100,7 @@ footer{
     gap: 60px;
 }
 
-
+@media screen and (min-width:750px){
 .nav{
     grid-area:na;
     display:flex;
@@ -105,6 +108,7 @@ footer{
     justify-content: space-around;
     margin:auto;
 
+}
 }
 
 

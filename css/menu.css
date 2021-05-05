@@ -8,8 +8,7 @@
     background-repeat:no-repeat;
     
 }
-   
-
+@media screen and (min-width:750px){
 .gridwrapper{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -25,7 +24,7 @@
 background:url("/img/pexels-fwstudio-129731.jpg");
 height:130vh;
 }
-
+}
 .img{
     margin-left: 45%;
     margin-right: 55%;
@@ -141,7 +140,7 @@ footer{
     justify-content: center;
     gap: 60px;
 }
-
+@media screen and (min-width:750px){
 .nav{
     grid-area:na;
     display:flex;
@@ -150,10 +149,16 @@ footer{
     margin:auto;
 
 }
+}
+
+
 
 .huvudtext{
     font-size: 300%  ;
 }
+
+
+
 
 
 
